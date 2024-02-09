@@ -451,6 +451,124 @@ section{
 
 }
 
+/* Adicionando card 2 */
+.card .img-card-02 {
+    background-image: url(./imgs/shoppingCar01.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+}
+
+.card:hover .img-card-02 {
+    opacity: 1;
+    width: 320px;
+    height: 160px;
+    transition: all .5s;
+}
+
+.card .img-card-02 span {
+    color: var(--color-destaque);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.card .img-card-02:hover span {
+    color: var(--color-destaque);
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+/* Adicionando card 2 */
+
+/* Adicionando card 3 */
+.card .img-card-03 {
+    background-image: url(./imgs/printFullPage01.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+}
+
+.card:hover .img-card-03 {
+    opacity: 1;
+    width: 320px;
+    height: 160px;
+    transition: all .5s;
+}
+
+.card .img-card-03 span {
+    color: var(--color-destaque);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.card .img-card-03:hover span {
+    color: var(--color-destaque);
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+/* Adicionando card 3 */
+
+/* Adicionando card 4 */
+.card .img-card-04 {
+    background-image: url(./imgs/calculadora01.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+}
+
+.card:hover .img-card-04 {
+    opacity: 1;
+    width: 350px;
+    height: 240px;
+    transition: all .5s;
+}
+
+.card .img-card-04 span {
+    color: var(--color-destaque);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.card .img-card-04:hover span {
+    color: var(--color-destaque);
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+/* Adicionando card 4 */
+
+
 .card .conteudo-card {
     padding: 0 20px;
     overflow: hidden;
