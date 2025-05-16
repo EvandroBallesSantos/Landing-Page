@@ -94,7 +94,6 @@ section{
     flex-direction: column;
     color: var(--color-font);
     padding-top: 25px;
-    /* border: 1px solid red; */
 }
 .lista-contato{
     display: flex;
@@ -226,8 +225,6 @@ section{
     align-items: center;
     padding: 40px 20px;
     width: 100%;
-    /* border: 2px solid yellow; */
-
 
     opacity: 0;
     filter: blur(15px);
@@ -310,103 +307,6 @@ section{
     height: 100px;
     width: 150px;
 }
-
-/* .all-cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-
-.container-cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 410px;
-    color: var(--color-body);
-
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(#1b1a1a, #1f1e1e);
-    overflow: hidden;
-    border-radius: 10px;
-    height: 410px;
-    width: 300px;
-    position: relative;
-}
-.img-cards{
-    height: 250px;
-    width: 300px;
-    overflow: hidden;
-}
-.img-001{
-    background-image: url(imgs/landingPage02PrintScreem.png);
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    width: 300px;
-}
-.img-002{
-    background-image: url(imgs/shoppingCar01.png);
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    width: 300px;
-}
-.img-003{
-    background-image: url(imgs/printFullPage01.png);
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    width: 300px;
-}
-.img-004{
-    background-image: url(imgs/calculadora01.png);
-    background-position: center;
-    background-size: cover;
-    height: 260px;
-    width: 300px;
-}
-.img-005{
-    background-image: url(imgs/landingPage02PrintScreem02.png);
-    background-position: center;
-    background-size: cover;
-    height: 260px;
-    width: 300px;
-}
-.titulo-card {
-    color: var(--color-destaque);
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.conteudo-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    height: 160px;
-    /* margin-bottom: 0; */
-/* } */
-/* .conteudo-card span{
-    text-transform: uppercase;
-    color: var(--color-font);
-    font-size: 1rem;
-}
-.desc-card{
-    color: var(--color-font);
-    font-size: .7rem;
-} */
 
 
 /*    -----------  SECTION 4 CONTATO   ---------    */
@@ -508,7 +408,6 @@ section{
     color: var(--color-font);
     gap: 1rem;
     padding-top: 25px;
-    /* border: 1px solid red; */
 }
 
 
@@ -621,7 +520,6 @@ a{
     }
     .lista-contato:hover{
         transform: scale(102%);
-        /* text-decoration: underline; */
         transition: all .5s;
     }
     .lista-contato:hover a{
