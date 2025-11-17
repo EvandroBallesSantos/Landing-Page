@@ -243,13 +243,6 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    height: 100%;
-
-    gap: 10px 20px; */
 }
 .card-only{
     display: flex;
@@ -439,7 +432,6 @@ footer p{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    /* transition: all 1s; */
 }
 
 
