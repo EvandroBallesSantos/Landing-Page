@@ -282,7 +282,7 @@ section{
     width: 150px;
 }
 .card-img-02{
-    background-image: url(imgs/landingPage02PrintScreem.png);
+    background-image: url(imgs/ImageAppMovies01.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
@@ -290,7 +290,7 @@ section{
     width: 150px;
 }
 .card-img-03{
-    background-image: url(imgs/shoppingCar01.png);
+    background-image: url(imgs/landingPage02PrintScreem.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
@@ -298,7 +298,7 @@ section{
     width: 150px;
 }
 .card-img-04{
-    background-image: url(imgs/flappyBird.png);
+    background-image: url(imgs/shoppingCar01.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
@@ -306,6 +306,14 @@ section{
     width: 150px;
 }
 .card-img-05{
+    background-image: url(imgs/flappyBird.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    height: 100px;
+    width: 150px;
+}
+.card-img-06{
     background-image: url(imgs/calculadora01.png);
     background-position: center;
     background-size: cover;
