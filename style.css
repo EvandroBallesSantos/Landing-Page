@@ -419,7 +419,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
 }
 .card-only{
     display: flex;
@@ -430,6 +430,7 @@ section{
     aspect-ratio: 1 / 1;
     gap: 5px;
     border: solid 1px var(--color-destaque);
+    box-shadow: 2px 2px 30px 1px var(--color-azul-primario);
     border-radius: 1rem;
     
 
@@ -449,6 +450,9 @@ section{
 }
 .a-card > h3{
     color: var(--color-font1);
+    border-top: 1px solid var(--color-destaque);
+    border-bottom: 1px solid var(--color-destaque);
+    padding: 10px 0px;
 }
 .desc-card{
     margin: 0;
@@ -457,6 +461,7 @@ section{
 .image-card{
     height: 100%;
     width: 100%;
+    min-height: 200px;
 }
 .card-img-01{
     background-image: url(imgs/printPageLicencaCapacitacao01.png);
@@ -471,40 +476,40 @@ section{
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 .card-img-03{
     background-image: url(imgs/landingPage02PrintScreem.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 .card-img-04{
     background-image: url(imgs/shoppingCar01.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 .card-img-05{
     background-image: url(imgs/flappyBird.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 .card-img-06{
     background-image: url(imgs/calculadora01.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 
 
