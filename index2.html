@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evandro Balles dos Santos - Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0A2540',
+                        accent: '#1E3A8A',
+                        secondary: '#F8FAFC',
+                        cta: '#10B981',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0A2540 0%, #1E40AF 100%);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #F8FAFC;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: #0A2540;
+        }
+        .tech-icon {
+            width: 3rem;
+            height: 3rem;
+            fill: #1E3A8A;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #F8FAFC;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            max-width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #1E3A8A;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: #10B981;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-primary text-secondary">
+    <header class="fixed top-0 w-full bg-primary shadow-lg z-50" role="banner">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center" role="navigation" aria-label="Navegação principal">
+            <h1 class="text-xl font-bold text-secondary">Evandro Balles dos Santos</h1>
+            <ul class="hidden md:flex space-x-6" role="menubar">
+                <li><a href="#hero" class="text-secondary hover:text-cta transition" role="menuitem">Início</a></li>
+                <li><a href="#about" class="text-secondary hover:text-cta transition" role="menuitem">Quem sou eu</a></li>
+                <li><a href="#portfolio" class="text-secondary hover:text-cta transition" role="menuitem">Portfólio</a></li>
+                <li><a href="#contact" class="text-secondary hover:text-cta transition" role="menuitem">Contato</a></li>
+            </ul>
+            <button class="md:hidden text-secondary" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-primary p-4" role="menu">
+            <a href="#hero" class="block text-secondary py-2" role="menuitem">Início</a>
+            <a href="#about" class="block text-secondary py-2" role="menuitem">Quem sou eu</a>
+            <a href="#portfolio" class="block text-secondary py-2" role="menuitem">Portfólio</a>
+            <a href="#contact" class="block text-secondary py-2" role="menuitem">Contato</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-bg min-h-screen flex items-center justify-center text-center px-4 fade-in" role="main" aria-labelledby="hero-title">
+            <div class="max-w-4xl mx-auto">
+                <img src="https://via.placeholder.com/150" alt="Foto de Evandro Balles dos Santos" class="w-32 h-32 rounded-full mx-auto mb-6" loading="lazy">
+                <h2 id="hero-title" class="text-4xl md:text-6xl font-bold text-secondary mb-4">Evandro Balles dos Santos</h2>
+                <p class="text-xl md:text-2xl text-secondary mb-6">Desenvolvedor Full-Stack</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <span class="badge"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L13 7l5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/></svg> React</span>
+                    <span class="badge"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L13 7l5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/></svg> Next.js</span>
+                    <span class="badge"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L13 7l5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/></svg> Tailwind CSS</span>
+                    <span class="badge"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L13 7l5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/></svg> Node.js</span>
+                    <span class="badge"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L13 7l5 1-4 4 1 5-5-3-5 3 1-5-4-4 5-1z"/></svg> Git</span>
+                </div>
+                <a href="#" class="bg-cta text-primary px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition">Download CV</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 px-4 bg-secondary fade-in" role="region" aria-labelledby="about-title">
+            <div class="container mx-auto max-w-6xl">
+                <h3 id="about-title" class="text-3xl font-bold text-primary mb-8 text-center">Quem sou eu</h3>
+                <p class="text-lg text-primary mb-8">Sou um desenvolvedor apaixonado por tecnologia, com ambições de criar soluções inovadoras e impactantes. Tenho experiência em desenvolvimento web full-stack, focando em interfaces modernas e funcionais.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                    <div class="text-center"><svg class="tech-icon mx-auto" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><p>React</p></div>
+                    <div class="text-center"><svg class="tech-icon mx-auto" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><p>Next.js</p></div>
+                    <div class="text-center"><svg class="tech-icon mx-auto" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><p>Tailwind</p></div>
+                    <div class="text-center"><svg class="tech-icon mx-auto" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><p>Node.js</p></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>2022:</strong> Curso de Desenvolvimento Web</div>
+                    <div class="timeline-item"><strong>2023:</strong> Especialização em React</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-16 px-4 bg-primary fade-in" role="region" aria-labelledby="portfolio-title">
+            <div class="container mx-auto max-w-6xl">
+                <h3 id="portfolio-title" class="text-3xl font-bold text-secondary mb-8 text-center">Portfólio</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-secondary p-6 rounded-lg shadow-lg hover:shadow-xl transition cursor-pointer" onclick="openModal('aquila')" role="button" tabindex="0" aria-label="Abrir modal do projeto Aquila Shooting">
+                        <img src="https://via.placeholder.com/300x200" alt="Aquila Shooting" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+                        <h4 class="text-xl font-bold text-primary">Aquila Shooting</h4>
+                        <p class="text-primary">Jogo de tiro simples.</p>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-lg shadow-lg hover:shadow-xl transition cursor-pointer" onclick="openModal('evandroflix')" role="button" tabindex="0" aria-label="Abrir modal do projeto EvandroFlix">
+                        <img src="https://via.placeholder.com/300x200" alt="EvandroFlix" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+                        <h4 class="text-xl font-bold text-primary">EvandroFlix</h4>
+                        <p class="text-primary">Plataforma de streaming.</p>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-lg shadow-lg hover:shadow-xl transition cursor-pointer" onclick="openModal('flappy')" role="button" tabindex="0" aria-label="Abrir modal do projeto Flappy Bird">
+                        <img src="https://via.placeholder.com/300x200" alt="Flappy Bird" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+                        <h4 class="text-xl font-bold text-primary">Flappy Bird</h4>
+                        <p class="text-primary">Clone do jogo clássico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 px-4 bg-secondary fade-in" role="region" aria-labelledby="contact-title">
+            <div class="container mx-auto max-w-4xl">
+                <h3 id="contact-title" class="text-3xl font-bold text-primary mb-8 text-center">Contato</h3>
+                <form id="contact-form" class="bg-primary p-8 rounded-lg shadow-lg" role="form" aria-labelledby="contact-title">
+                    <div class="mb-4">
+                        <label for="name" class="block text-secondary mb-2">Nome</label>
+                        <input type="text" id="name" class="w-full p-3 rounded bg-secondary text-primary" required aria-required="true">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-secondary mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-3 rounded bg-secondary text-primary" required aria-required="true">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-secondary mb-2">Mensagem</label>
+                        <textarea id="message" rows="5" class="w-full p-3 rounded bg-secondary text-primary" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="bg-cta text-primary px-6 py-3 rounded font-semibold hover:bg-opacity-80 transition">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary py-8 px-4 text-center" role="contentinfo">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="mailto:evandro@example.com" class="text-secondary hover:text-cta transition" aria-label="Email">Email</a>
+                <a href="https://wa.me/123456789" class="text-secondary hover:text-cta transition" aria-label="WhatsApp">WhatsApp</a>
+                <a href="https://linkedin.com/in/evandro" class="text-secondary hover:text-cta transition" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/evandro" class="text-secondary hover:text-cta transition" aria-label="GitHub">GitHub</a>
+            </div>
+            <p class="text-secondary">&copy; 2023 Evandro Balles dos Santos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+        <div class="modal-content">
+            <button onclick="closeModal()" class="float-right text-primary" aria-label="Fechar modal">×</button>
+            <h4 id="modal-title" class="text-2xl font-bold text-primary mb-4">Projeto</h4>
+            <img id="modal-img" src="" alt="" class="w-full h-64 object-cover rounded mb-4" loading="lazy">
+            <p id="modal-desc" class="text-primary mb-4">Descrição do projeto.</p>
+            <div id="modal-tech" class="mb-4"></div>
+            <a id="modal-github" href="#" class="text-cta mr-4">GitHub</a>
+            <a id="modal-live" href="#" class="text-cta">Live Demo</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        function openModal(project) {
+            const modal = document.getElementById('modal');
+            const title = document.getElementById('modal-title');
+            const img = document.getElementById('modal-img');
+            const desc = document.getElementById('modal-desc');
+            const tech = document.getElementById('modal-tech');
+            const github = document.getElementById('modal-github');
+            const live = document.getElementById('modal-live');
+
+            if (project === 'aquila') {
+                title.textContent = 'Aquila Shooting';
+                img.src = 'https://via.placeholder.com/600x400';
+                desc.textContent = 'Um jogo de tiro simples desenvolvido em JavaScript.';
+                tech.innerHTML = '<span class="badge">JavaScript</span>';
+                github.href = 'https://github.com/evandro/aquila-shooting';
+                live.href = 'https://evandro.github.io/aquila-shooting';
+            } else if (project === 'evandroflix') {
+                title.textContent = 'EvandroFlix';
+                img.src = 'https://via.placeholder.com/600x400';
+                desc.textContent = 'Plataforma de streaming personalizada.';
+                tech.innerHTML = '<span class="badge">React</span><span class="badge">Node.js</span>';
+                github.href = 'https://github.com/evandro/evandroflix';
+                live.href = 'https://evandroflix.com';
+            } else if (project === 'flappy') {
+                title.textContent = 'Flappy Bird';
+                img.src = 'https://via.placeholder.com/600x400';
+                desc.textContent = 'Clone do jogo Flappy Bird.';
+                tech.innerHTML = '<span class="badge">JavaScript</span><span class="badge">HTML5</span>';
+                github.href = 'https://github.com/evandro/flappy-bird';
+                live.href = 'https://evandro.github.io/flappy-bird';
+            }
+
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+                alert('Por favor, insira um email válido.');
+                return;
+            }
+
+            alert('Mensagem enviada com sucesso!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

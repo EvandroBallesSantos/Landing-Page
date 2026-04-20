@@ -12,11 +12,12 @@ const myObserver = new IntersectionObserver((entries) => {
 
 // Section 1
 const content01 = document.querySelectorAll('.conteudo-principal-1-escrito');
-const content011 = document.querySelectorAll('.conteudo-principal-1-ola');
+const content011 = document.querySelectorAll('.descTitles');
 const content012 = document.querySelectorAll('.conteudo-principal-1-nome');
 const content013 = document.querySelectorAll('.conteudo-principal-1-decript');
 const content014 = document.querySelectorAll('.lista-contato');
 const content015 = document.querySelectorAll('.div-img');
+const content016 = document.querySelectorAll('.miniCardsSkills');
 
 // section 2 QUEM SOU EU
 const content02 = document.querySelectorAll('.titulo-quem-sou');
@@ -27,10 +28,13 @@ const content025 = document.querySelectorAll('.button-cv');
 
 
 const content03 = document.querySelectorAll('.container-quem-sou');
-const content05 = document.querySelectorAll('.portifolio');
+// const content05 = document.querySelectorAll('.portifolio');
+const content05 = document.querySelectorAll('.portifolioAll');
 const content06 = document.querySelectorAll('.container-cards');
 const content07 = document.querySelectorAll('.card-only');
-const content08 = document.querySelectorAll('.contato');
+// const content08 = document.querySelectorAll( '.contato' );
+const content08 = document.querySelectorAll('.limitar');
+
 
 const content09 = document.querySelectorAll('footer');
 
@@ -41,6 +45,7 @@ content012.forEach((element) => myObserver.observe(element))
 content013.forEach((element) => myObserver.observe(element))
 content014.forEach((element) => myObserver.observe(element))
 content015.forEach((element) => myObserver.observe(element))
+content016.forEach((element) => myObserver.observe(element))
 
 // Section 2
 content02.forEach((element) => myObserver.observe(element))
