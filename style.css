@@ -22,6 +22,7 @@
     --color-font1: #F8FAFC;
     --color-font2: #91a2c2;
     --color-destaque: #3676de;
+    --color-destaque02: chocolate;
     --color-azul-nav: #0A2540;
     --color-azul-primario: #1E3A8A;
     --color-cinza-fundo: #F8FAFC;
@@ -30,7 +31,7 @@
 
 
 body{
-    background-color: var(--color-backgound01);
+    background-color: var(--color-background03);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +172,8 @@ section{
 
 .miniCardsSkills {
     display: flex;
-    flex-wrap: wrap;justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 70%;
     margin: 0;
     padding: 0;
@@ -207,6 +209,10 @@ section{
     width: 100%;
     gap: 20px;
     
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(0);
+    transition: all .8s;
 }
 .buttonOnly{
     color: var(--color-font1);
@@ -236,16 +242,6 @@ section{
     color: var(--color-font1);
     padding-top: 25px;
 }
-.lista-contato{
-    display: flex;
-    align-items: baseline;
-    gap: .5rem;
-
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateX(0);
-    transition: all .8s;
-}
 
 .cor-svg{
     color: var(--color-destaque);
@@ -274,11 +270,9 @@ section{
     align-items: center;
     min-height: 300px;
     gap: .5rem;
-    padding: 5rem 5rem;
+    /* padding: 5rem 5rem; */
     opacity: 1;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
+    padding: 60px 16px;
 }
 
 .container-quem-sou{
@@ -286,7 +280,7 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: ; */
+    gap: 10px;
 }
 
 .titulo-quem-sou{
@@ -320,15 +314,10 @@ section{
     gap: 12px;
     padding: 20px 0;
 
-    /* opacity: 0;
-    filter: blur(15px);
-    transform: translate(30%);
-    transition: all 1s; */
-
     opacity: 0;
     filter: blur(15px);
     transform: translate(0);
-    transition: all .8s;
+    transition: all 1s;
 }
 
 .tecnologias{
@@ -390,11 +379,6 @@ section{
     align-items: center;
     padding: 40px 20px;
     width: 100%;
-
-    /* opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 1s; */
 }
 
 .portifolioAll{
@@ -419,15 +403,15 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
 }
 .card-only{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* max-width: 500px; */
-    aspect-ratio: 1 / 1;
+    max-width: 500px;
+    overflow: hidden;
     gap: 5px;
     border: solid 1px var(--color-destaque);
     box-shadow: 2px 2px 30px 1px var(--color-azul-primario);
@@ -445,10 +429,10 @@ section{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    padding: 24px;
+    padding: 16px;
     gap: 10px;
 }
-.a-card > h3{
+.title-card{
     color: var(--color-font1);
     border-top: 1px solid var(--color-destaque);
     border-bottom: 1px solid var(--color-destaque);
@@ -459,7 +443,7 @@ section{
     color: var(--color-font2);
 }
 .image-card{
-    height: 100%;
+    height: 200px;
     width: 100%;
     min-height: 200px;
 }
@@ -607,6 +591,41 @@ section{
     font-size: .8rem;
 }
 
+.contatos{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.lista-contato{
+    display: flex;
+    align-items: baseline;
+    height: 20px;
+    text-align: center;
+    gap: .5rem;
+
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(0);
+    transition: all .8s;
+}
+.contato-org{
+    color: var(--color-font2);
+}
+.contato-org > P{
+    margin: 0;
+}
+.logo-github{
+    height: 17px;
+}
+.img-github{
+    height: 17px;
+    color: var(--color-destaque02);
+}
+.cor-svg{
+    color: var(--color-destaque02);
+}
+
 .contatos2{
     display: flex;
     flex-direction: column;
@@ -622,6 +641,7 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
+    color: var(--color-font1);
     background-color: var(--color-background03);
 
     opacity: 0;
@@ -629,8 +649,10 @@ footer{
     transform: translate(0);
     transition: all 1.2s;
 }
-footer p{
+.desc-rodape{
+    font-size: 12px;
     margin: 5px 0;
+    color: var(--color-font2);
 }
 
 
@@ -648,25 +670,23 @@ footer p{
 h1{
     font-size: 2.25rem;
 }
-
 h2{
     font-size: 1.875rem;
 }
-
 h3{
     font-size: 1.25rem;
 }
-
 h4{
     font-size: 1.125rem;
 }
-
 h5{
     font-size: 1rem;
 }
-
-p{
+h6{
     font-size: 0.875rem;
+}
+p{
+    font-size: 0.75rem;
 }
 
 a{
@@ -675,9 +695,12 @@ a{
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .conteudo-principal-1-nome{
-        font-size: 3rem;
+    .conteudo-principal-1-img{
+        max-width: 250px;
     }
+    /* .conteudo-principal-1-nome{
+        font-size: 3rem;
+    } */
     .button-cv{
         height: 2.4rem;
         width: 8rem;
@@ -694,18 +717,17 @@ a{
         gap: 10px 20px;
     }
     h1{
-        font-size: 1.6rem;
+        font-size: 3rem;
     }
     h2{
-        font-size: 1.1rem;
-        font-weight: 600;
+        font-size: 1.875rem;
+        /* font-weight: 600; */
     }
-    p{
-        font-size: .8rem;
+    h4{
+        font-size: 1.25rem;
     }
-    a{
-        font-size: .8rem;
-        text-decoration: none;
+    .miniCardsSkills{
+        width: 50%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -791,17 +813,9 @@ a{
         
     }
     h1{
-        font-size: 2rem;
+        font-size: 3.75rem;
     }
     h2{
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-    p{
-        font-size: .9rem;
-    }
-    a{
-        font-size: .9rem;
-        text-decoration: none;
+        font-size: 2rem;
     }
 }

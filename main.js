@@ -18,6 +18,7 @@ const content013 = document.querySelectorAll('.conteudo-principal-1-decript');
 const content014 = document.querySelectorAll('.lista-contato');
 const content015 = document.querySelectorAll('.div-img');
 const content016 = document.querySelectorAll('.miniCardsSkills');
+const content017 = document.querySelectorAll('.containerButtons');
 
 // section 2 QUEM SOU EU
 const content02 = document.querySelectorAll('.titulo-quem-sou');
@@ -25,6 +26,7 @@ const content022 = document.querySelectorAll('.descricao-quem-sou');
 const content023 = document.querySelectorAll('.description-tecnologias');
 const content024 = document.querySelectorAll('.description-cursos');
 const content025 = document.querySelectorAll('.button-cv');
+const content026 = document.querySelectorAll('.description-tecnologias');
 
 
 const content03 = document.querySelectorAll('.container-quem-sou');
@@ -46,6 +48,7 @@ content013.forEach((element) => myObserver.observe(element))
 content014.forEach((element) => myObserver.observe(element))
 content015.forEach((element) => myObserver.observe(element))
 content016.forEach((element) => myObserver.observe(element))
+content017.forEach((element) => myObserver.observe(element))
 
 // Section 2
 content02.forEach((element) => myObserver.observe(element))
@@ -53,6 +56,7 @@ content022.forEach((element) => myObserver.observe(element))
 content023.forEach((element) => myObserver.observe(element))
 content024.forEach((element) => myObserver.observe(element))
 content025.forEach((element) => myObserver.observe(element))
+content026.forEach((element) => myObserver.observe(element))
 
 
 
