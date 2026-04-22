@@ -1,13 +1,3 @@
-/* @font-face {
-    font-family: 'Roboto-Regular';
-    src: url(./fonts/Roboto-Regular.ttf);
-}
-* {
-    font-family: 'Roboto-Regular', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 * {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -134,7 +124,6 @@ section{
     text-align: center;
     color: var(--color-font1);
     gap: 12px;
-    /* padding: 16px 0; */
 }
 
 .conteudo-principal-1-nome{
@@ -266,8 +255,6 @@ path{
 
 
 
-
-
 /*    -----------  SECTION 2 QUEM SOU EU  ---------    */
 
 .quem-sou{
@@ -292,11 +279,6 @@ path{
 
 .titulo-quem-sou{
     color: var(--color-font1);
-/* 
-    opacity: 0;
-    filter: blur(15px);
-    transform: translate(30%);
-    transition: all .6s; */
 
     opacity: 0;
     filter: blur(15px);
@@ -339,11 +321,6 @@ path{
     margin: 0;
     padding: 0;
     gap: 10px;
-
-    /* opacity: 0;
-    filter: blur(15px);
-    transform: translateX(0);
-    transition: all .8s; */
 }
 .cardsSkills > .cardLiSkills {
     height: 120px;
@@ -521,8 +498,6 @@ path{
     padding-bottom: 30px;
     gap: 3rem;
     background-color: var(--color-backgound02);
-
-    /* border: 1px solid red; */
 }
 
 .limitar{
@@ -717,9 +692,6 @@ a{
     .conteudo-principal-1-decript{
         line-height: 1.2;
     }
-    /* .conteudo-principal-1-nome{
-        font-size: 3rem;
-    } */
     .button-cv{
         height: 2.4rem;
         width: 8rem;
@@ -738,7 +710,6 @@ a{
     }
     h2{
         font-size: 1.875rem;
-        /* font-weight: 600; */
     }
     h4{
         font-size: 1.25rem;
