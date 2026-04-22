@@ -16,7 +16,7 @@
 }
 
 :root{
-    --color-backgound01: radial-gradient(circle,rgb(12, 18, 46) 0%, rgba(2, 5, 23, 1) 50%, rgb(8, 12, 32) 100%);;
+    --color-backgound01: radial-gradient(circle,rgb(12, 18, 46) 0%, rgba(2, 5, 23, 1) 50%, rgb(8, 12, 32) 100%);
     --color-backgound02: #0a0a0a;
     --color-background03: #0d1119;
     --color-font1: #F8FAFC;
