@@ -185,7 +185,6 @@ section{
     transition: all .8s;
 }
 .miniCardsSkills > .liSkills {
-    /* flex: 0 0 calc(20% - 40px); */
     height: 100px;
     width: 100px;
     display: flex;
@@ -244,7 +243,11 @@ section{
 }
 
 .cor-svg{
-    color: var(--color-destaque);
+    width: 25px;
+}
+path{
+    fill: var(--color-destaque02);
+    width: 25px;
 }
 
 .github-site{
@@ -393,6 +396,7 @@ section{
     flex-direction: column;
     align-items: center;
     color: var(--color-font1);
+    padding-bottom: 16px;
 }
 
 .sub-titulo-portifolio{
@@ -696,7 +700,10 @@ a{
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .conteudo-principal-1-img{
-        max-width: 250px;
+        max-width: 200px;
+    }
+    .conteudo-principal-1-decript{
+        line-height: 1.2;
     }
     /* .conteudo-principal-1-nome{
         font-size: 3rem;
@@ -713,8 +720,6 @@ a{
         align-items: center;
         justify-content: center;
         height: 100%;
-
-        gap: 10px 20px;
     }
     h1{
         font-size: 3rem;
@@ -733,22 +738,15 @@ a{
 @media screen and (min-width: 1024px) {
     .conteudo-principal-1{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 5rem;       
         padding-inline: 2rem; 
     }
     .conteudo-principal-1-img{
-        max-width: 350px;
+        max-width: 220px;
     }
-    .div-img{
-        padding: 1rem;
-        z-index: 1;
-    }
-    .conteudo-principal-1-nome{
-        font-size: 3rem;
-        font-weight: 700;
+    .conteudo-principal-1-decript{
+        line-height: 1.1;
     }
     .lista-contato:hover{
         transform: scale(102%);
@@ -769,6 +767,9 @@ a{
     }    
     .titulo-subtitulo-Portifolio{
         padding-bottom: 15px;
+    }
+    .card-only{
+        height: 650px;
     }
     .button-cv{
         height: 2.8rem;
@@ -794,7 +795,7 @@ a{
     }
     .card-only:hover{
         cursor: pointer;
-        transform: scale(110%);
+        transform: scale(102%);
         transition: all .5s;
     }
     .limitar{
@@ -816,6 +817,6 @@ a{
         font-size: 3.75rem;
     }
     h2{
-        font-size: 2rem;
+        font-size: 1.875rem;
     }
 }
