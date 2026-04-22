@@ -60,16 +60,18 @@ main{
     backdrop-filter: blur(10px);
 }
 .containerNav {
-    height: 60px;
+    height: 63px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 10px;
 }
-.nameTitle {
-    color: var(--color-cinza-fundo);
+.nameTitle{
     font-size: 1rem;
     margin: 0;
+}
+.nameTitle > a{
+    color: var(--color-cinza-fundo);
 }
 .ul1 {
     display: flex;
@@ -93,6 +95,8 @@ main{
 section{
     display: flex;
     flex-direction: column;
+    scroll-padding-top: 50px;
+
 }
 
 /*    -----------  SECTION 1 DADOS PRINCIPAIS  ---------    */
@@ -375,7 +379,12 @@ path{
 
 /*    -----------  SECTION 3 PORTIFÓLIO   ---------    */
 
+.portifolioScroll{
+    height: 50px;
+}
+
 .portifolio{
+    scroll-padding-top: 10%;
     background-color: var(--color-background03);
     display: flex;
     flex-direction: column;
@@ -736,6 +745,12 @@ a{
     }
 }
 @media screen and (min-width: 1024px) {
+    .list > a:hover{
+        transform: scale(105%);
+        color: var(--color-destaque);
+        text-decoration: underline;
+        transition: all .5s;        
+    }
     .conteudo-principal-1{
         display: flex;
         align-items: center;
@@ -747,6 +762,20 @@ a{
     }
     .conteudo-principal-1-decript{
         line-height: 1.1;
+    }
+    .liSkills:hover{
+        transform: scale(110%);
+        transition: all .5s;
+    }
+    .cardLiSkills:hover{
+        transform: scale(110%);
+        transition: all .5s;        
+    }
+    .buttonLink:hover{
+        transform: scale(110%);
+        transition: all .5s;
+        background-color: rgb(245, 154, 88);
+        color: #000000;
     }
     .lista-contato:hover{
         transform: scale(102%);
@@ -781,7 +810,6 @@ a{
         transition: all .5s;
         background-color: rgb(245, 154, 88);
         color: #000000;
-        
     }
     .container-cards{
         display: flex;
