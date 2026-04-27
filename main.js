@@ -14,7 +14,7 @@ const myObserver = new IntersectionObserver((entries) => {
 const content01 = document.querySelectorAll('.conteudo-principal-1-escrito');
 const content011 = document.querySelectorAll('.descTitles');
 const content012 = document.querySelectorAll('.conteudo-principal-1-nome');
-const content013 = document.querySelectorAll('.conteudo-principal-1-decript');
+const content013 = document.querySelectorAll('.conteudo-principal-1-descript');
 const content014 = document.querySelectorAll('.lista-contato');
 const content015 = document.querySelectorAll('.div-img');
 const content016 = document.querySelectorAll('.miniCardsSkills');
