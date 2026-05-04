@@ -34,6 +34,7 @@
 }
 
 
+/*    -----------  MAIN & BODY   ---------    */
 body{
     background-color: var(--color-background03);
     background-size: cover;
@@ -42,7 +43,6 @@ body{
     background-attachment: fixed;
 }
 
-/*    -----------  MAIN   ---------    */
 main{
     display: flex;
     flex-direction: column;
