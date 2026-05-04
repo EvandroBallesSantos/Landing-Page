@@ -27,18 +27,17 @@ const content023 = document.querySelectorAll('.description-tecnologias');
 const content024 = document.querySelectorAll('.description-cursos');
 const content025 = document.querySelectorAll('.button-cv');
 const content026 = document.querySelectorAll('.description-tecnologias');
+const content027 = document.querySelectorAll('.cardsSkills');
 
 
 const content03 = document.querySelectorAll('.container-quem-sou');
-// const content05 = document.querySelectorAll('.portifolio');
 const content05 = document.querySelectorAll('.portifolioAll');
 const content06 = document.querySelectorAll('.container-cards');
 const content07 = document.querySelectorAll('.card-only');
-// const content08 = document.querySelectorAll( '.contato' );
 const content08 = document.querySelectorAll('.limitar');
 
 
-const content09 = document.querySelectorAll('footer');
+const content09 = document.querySelectorAll('.rodape');
 
 // Section 1
 content01.forEach((element) => myObserver.observe(element))
@@ -57,6 +56,7 @@ content023.forEach((element) => myObserver.observe(element))
 content024.forEach((element) => myObserver.observe(element))
 content025.forEach((element) => myObserver.observe(element))
 content026.forEach((element) => myObserver.observe(element))
+content027.forEach((element) => myObserver.observe(element))
 
 
 
