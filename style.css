@@ -33,6 +33,14 @@
     transition: all 1s;
 }
 
+/* ----------- Efeito de deslizar página toda ------------ */
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 /*    -----------  MAIN & BODY   ---------    */
 body{
@@ -577,15 +585,6 @@ footer{
     font-size: 12px;
     margin: 5px 0;
     color: var(--color-font2);
-}
-
-
-/* ----------- Efeito de deslizar página toda ------------ */
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
 }
 
 
